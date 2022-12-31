@@ -4,10 +4,13 @@
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build"
+    "build": "vue-cli-service build",
+    "back": "json-server --watch db.json --port 3000",
+    "watch": "tailwindcss -i ./src/assets/style.css -o ./src/assets/app.css --watch"
   },
   "dependencies": {
     "core-js": "^3.8.3",
+    "tailwindcss": "^3.2.4",
     "vue": "^3.2.13",
     "vue-router": "^4.0.3"
   },
